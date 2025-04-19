@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <title></title>
+ <style type="text/css" media="all">
+  *{
+   box-sizing: border-box;
+  }
+  body{
+   background: #F2F2F2;
+font-family: sans-serif;
+  }
+  h1{
+   text-align: center;
+   margin-block: 95px;
+   color: #444;
+  }
+  h1 span{
+   color: black;
+  }
+  .back{
+   font-weight: bold;
+   font-size: 1em;
+   color: #1B6AE4;
+  }
+  label{
+   display: block;
+   font-size: .85em;
+   font-weight: bold;
+   margin-top: 16px;
+  }
+  input{
+   width: 100%;
+   padding: 6px 3px;
+  }
+  input:last-of-type{
+   height:100px;
+  }
+  button{
+   font-size: 1em;
+   border-radius:6px;
+   margin-top: 9px;
+   float: right;
+   padding: 8px 16px;
+   display: block;
+   font-weight: bold;
+  }
+  .foot{
+   display: block;
+   font-size: .7em;
+   opacity: .7;
+   margin-top: 100px;
+  }
+ </style>
+</head>
+
+<body>
+ 
+ <h1>Stupoint<span>Support</span></h1>
+ <p class="back" onclick="window.location.href='../index.html'">Back to home</p>
+ <form action="" method="get" accept-charset="utf-8">
+  
+ <label for="Name">Name</label>
+ <input type="text" name="Name" id="Name" value="" />
+ 
+ <label for="Email">Email</label>
+ <input type="email" name="Email" id="Email" value="" />
+ 
+ <label for="Message">Message</label>
+ <input type="text" name="Message" id="Message" value="" />
+ 
+ <button type="submit">Submit</button>
+ </form>
+ 
+ <p class="foot">Amanda Stupoint is a product of <a href="amandainc.xyz">Amanda Inc.</a> Copyright &copy; 2025. All rights reserved. <a href="">Terms and Conditions</a> apply. Data collected is collected, stored and used according to the <a href="">privacy policy</a></p>
+ <script>
+  console.log(window.location.href)
+ </script>
+</body>
+
+</html>
