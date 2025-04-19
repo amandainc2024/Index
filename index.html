@@ -128,7 +128,7 @@
         <div>
             <a href="#features">Features</a>
             <a href="#reviews">Reviews</a>
-             <a href="support/">Support</a>
+             <a href="support/index.html">Support</a>
         </div>
         <button onclick="show('l')">Log in<i class="fas fa-chevron-down"></i></button>
     </nav>
@@ -219,7 +219,7 @@
         </div>
     </section>
 
-    <div class="features">
+    <div id="features" class="features">
         <style>
             .features {
                 padding: 1rem 0.4rem;
@@ -349,7 +349,7 @@
         <button>Send</button>
     </div>
 
-    <div class="reviews">
+    <div id="reviews" class="reviews">
         <style>
             .reviews {
                 display: flex;
@@ -525,6 +525,11 @@
                 color: #0056b3;
             }
         </style>
+        <p><b>Quick links:</b> 
+        <a href="#features">Features</a>
+        <a href="#reviews">Reviews</a>
+        <a href="support/index.html">Support</a>
+        </p>
         <p>&copy; 2025 Stupoint. All rights reserved.</p>
         <p>Designed by Stupoint. Developed by Stupoint.</p>
         <div class="social-links">
@@ -538,8 +543,8 @@
     <div class="signup s">
         <div class="con">
             <h2>Sign Up</h2>
-            <button><a href="">As a Student</a></button>
-            <button><a href="">As a Teacher</a></button>
+            <button><a href="192.168.0.110:22080/portal/pages/userrpm/portal_login.html?clientMac=8A:70:C7:0A:40:DF&origUrl=http://198.16.0.10/">As a Student</a></button>
+            <button><a href="g.com">As a Teacher</a></button>
             <button><a href="">As an Administrator</a></button>
             <br><br>
             <button class="i" onclick="show('l')">Log in instead</button>
@@ -596,24 +601,24 @@
     <script>
         console.log(window.location.href);
         
+        function shift(t){
+            if(t == "l"){
+                return 's';
+            }
+            else{
+                return 'l'
+            }
+        }
         function show(t){
             var ts = document.querySelector('.signup.'+t);
             ts.style.display = 'grid';
-            var o = {
-                'l':'s',
-                "s":'l'
-            }
-            hide(o.t)
+             
+            hide(shift(t))
         }
         function hide(t){
             var ts = document.querySelector('.signup.'+t);
             ts.style.display = 'none'
-                        var o = {
-                'l': 's',
-                "s": 'l'
-            }
-            show(o.t)
-
+             
         }
     </script>
 </body>
